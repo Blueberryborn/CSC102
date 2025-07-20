@@ -9,8 +9,10 @@ selector{
 
 
 body {
-    background-color: green;
+    background-color: rgb(132, 192, 226);
     color: whitesmoke;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
 }
 
 nav{
@@ -19,6 +21,7 @@ nav{
     float: left;
     padding: 5px;
     line-height: 30px;
+    font-size: 30px;
 
 }
 
@@ -29,8 +32,8 @@ footer{
 }
  
 #MemeImage{
-    margin-right: 200px;
-    width: 400px;
+    scroll-margin-left: 800px;
+    width: 900px;
 }
 
 h1{
