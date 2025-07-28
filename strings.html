@@ -8,41 +8,8 @@ This is my strings.html project for checking name and zip~
 <html>
 <head>
     <title>Form Page</title>
-
-    <!-- I wanted to add a background color and change the font that matched other pages -->
-    <style>
-        body {
-            background-color: lightblue; /* Makes it look all pretty :)*/
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        h1 {
-            color: darkblue;
-        }
-
-        input {
-            margin: 10px;
-            padding: 8px;
-         }
-
-        button {
-            padding: 10px;
-            background-color: green;
-            color: white;
-        }
-
-        #message {
-            margin-top: 20px;
-            color: red;
-            font-weight: bold;
-        }
-
-        #secretImage {
-            display: none;
-            margin-inline: auto;
-        }
-    </style>
+    <!-- Linked external CSS -->
+    <link rel="stylesheet" href="strings.css">
 </head>
 <body>
 
@@ -51,14 +18,9 @@ This is my strings.html project for checking name and zip~
 
     <!-- The form wraps all input and submit elements -->
     <form id="infoForm">
-        <!-- These are my input boxes for names -->
         <input type="text" id="firstName" placeholder="First Name" required><br>
         <input type="text" id="lastName" placeholder="Last Name" required><br>
-
-        <!-- This is for zip code -->
         <input type="text" id="zipCode" placeholder="Zip Code" required><br>
-
-        <!-- This button submits the form -->
         <button type="submit">Check Info</button>
     </form>
 
@@ -68,44 +30,7 @@ This is my strings.html project for checking name and zip~
     <!-- Fun image for the secret message -->
     <img id="secretImage" src="cat.jpeg" width="900px" height="600px">
 
-    <!-- My JavaScript -->
-    <script>
-        // This function runs when the form is submitted
-        document.getElementById("infoForm").onsubmit = function(event) {
-            // Stop the page from refreshing
-            event.preventDefault();
-
-            // Get the values from the input boxes
-            var first = document.getElementById("firstName").value;
-            var last = document.getElementById("lastName").value;
-            var zip = document.getElementById("zipCode").value;
-
-            // Make the full name
-            var fullName = first + " " + last;
-
-            // This is where we show messages
-            var message = document.getElementById("message");
-
-            // Hide the image at first
-            document.getElementById("secretImage").style.display = "none";
-
-            // Check if name is too long
-            if (fullName.length > 20) {
-                message.innerHTML = "Quite the name! Too long I'm afraid.";
-                return;
-            }
-
-            // Check if zip is exactly 5 numbers
-            if (zip.length != 5 || isNaN(zip)) {
-                message.innerHTML = "Zip code must be 5 numbers only.";
-                return;
-            }
-
-            // If everything is okay, show the secret message
-            message.innerHTML = "UH-OH! " + fullName + "! Kitty thinks you're stinky!";
-            document.getElementById("secretImage").style.display = "block";
-        };
-    </script>
-
+    <!-- Linked external JS -->
+    <script src="strings.js"></script>
 </body>
 </html>
