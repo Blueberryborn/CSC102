@@ -1,0 +1,108 @@
+<!-- 
+Name: Anthony Plass
+Date: 08/10/2025
+Assignment: Palindrome Checker
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palindrome Checker</title>
+
+
+
+    <style>
+        /* Give the page a nice background color and centered content */
+        body {
+            background-color: #f2e9f7; /* Light pastel purple */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        h1 {
+            font-family: 'Pacifico', cursive; /* Fun font! */
+            color: #5c2a9d;
+            margin-top: 30px;
+        }
+
+        /* Form container styling */
+        .container {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            padding: 20px;
+            max-width: 400px;
+            margin: 30px auto;
+        }
+
+        /* Input field styling */
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            background-color: #5c2a9d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #7b42c1;
+        }
+
+        /* Result text styling */
+        #result {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Decorative image */
+        img {
+            width: 100px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page title -->
+    <h1>Palindrome Checker</h1>
+
+    <!-- Main content container -->
+    <div class="container">
+        
+        <!-- user input -->
+        <form id="palindromeForm" onsubmit="return checkPalindrome()">
+            <input type="text" id="userString" placeholder="Enter a word or phrase" required>
+            <br>
+            <input type="submit" value="Check">
+        </form>
+
+        <!-- Result display -->
+        <div id="result"></div>
+
+        <!-- MEMEMMEE PHOTOSSS
+         -->
+        <img src="pal_photo.avif" alt="Palindrome Image">
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="palindrome.js"></script>
+
+</body>
+</html>
