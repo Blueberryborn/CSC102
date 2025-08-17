@@ -1,108 +1,125 @@
 <!-- 
 Name: Anthony Plass
-Date: 08/10/2025
+Date: 08/16/2025
 Assignment: Palindrome Checker
 -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding -->
     <meta charset="UTF-8">
+    <!-- Page title in browser tab -->
     <title>Palindrome Checker</title>
 
-
+    <!-- Import Google Font for style -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
     <style>
-        /* Give the page a nice background color and centered content */
+        /* Gradient background */
         body {
-            background-color: #f2e9f7; /* Light pastel purple */
-            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f2e9f7 0%, #e4f1ff 100%);
+            font-family: 'Inter', sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        /* Header styling */
+        /* Title style */
         h1 {
-            font-family: 'Pacifico', cursive; /* Fun font! */
+            font-family: 'Pacifico', cursive;
             color: #5c2a9d;
-            margin-top: 30px;
+            margin-bottom: 10px;
         }
 
-        /* Form container styling */
+        /* Container card */
         .container {
             background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            padding: 20px;
-            max-width: 400px;
-            margin: 30px auto;
+            border-radius: 16px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+            padding: 28px;
+            max-width: 480px;
+            width: calc(100% - 32px);
         }
 
-        /* Input field styling */
+        /* Input box */
         input[type="text"] {
-            width: 80%;
-            padding: 10px;
-            border-radius: 8px;
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
             border: 1px solid #ccc;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             font-size: 16px;
         }
 
-        /* Submit button styling */
+        /* Submit button */
         input[type="submit"] {
             background-color: #5c2a9d;
             color: white;
-            padding: 10px 20px;
+            padding: 10px 18px;
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
             cursor: pointer;
             font-size: 16px;
+            font-weight: 600;
         }
 
         input[type="submit"]:hover {
             background-color: #7b42c1;
         }
 
-        /* Result text styling */
+        /* Result text */
         #result {
-            margin-top: 15px;
+            margin-top: 14px;
             font-size: 18px;
-            font-weight: bold;
+            font-weight: 700;
+            min-height: 28px;
         }
 
-        /* Decorative image */
+        /* Glow animation for success */
+        .glow {
+            animation: pulseGlow 900ms ease-out;
+        }
+
+        @keyframes pulseGlow {
+            0% { text-shadow: 0 0 0 rgba(92,42,157,0); }
+            50% { text-shadow: 0 0 24px rgba(92,42,157,0.45); }
+            100% { text-shadow: 0 0 0 rgba(92,42,157,0); }
+        }
+
+        /*  image */
         img {
-            width: 100px;
-            margin-top: 15px;
+            width: 110px;
+            margin-top: 18px;
+            border-radius: 12px;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.15);
         }
     </style>
 </head>
 <body>
-
-    <!-- Page title -->
-    <h1>Palindrome Checker</h1>
-
-    <!-- Main content container -->
+    <!-- Main app card -->
     <div class="container">
-        
-        <!-- user input -->
-        <form id="palindromeForm" onsubmit="return checkPalindrome()">
+        <!-- Page title -->
+        <h1>Palindrome Checker</h1>
+
+        <!-- Form: input + button -->
+        <form id="palindromeForm">
             <input type="text" id="userString" placeholder="Enter a word or phrase" required>
-            <br>
             <input type="submit" value="Check">
         </form>
 
-        <!-- Result display -->
+        <!-- Display result -->
         <div id="result"></div>
 
-        <!-- MEMEMMEE PHOTOSSS
-         -->
+        <!-- image -->
         <img src="pal_photo.avif" alt="Palindrome Image">
     </div>
 
-    <!-- Link to external JavaScript file -->
+    <!-- Link to external JS file -->
     <script src="Palindrome.js"></script>
-
 </body>
 </html>
