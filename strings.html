@@ -1,0 +1,47 @@
+<!--
+Name: Anthony Plass
+Date: 7/26/2025
+This is my strings.html project for checking name and zip~
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<header class="site-header">
+  <nav class="main-nav">
+    <a href="INDEX.html">Home</a>
+    <a href="strings.html" aria-current="page">Strings</a>
+    <a href="Palindrome.html">Palindrome</a>
+    <a href="game.html">Game</a>
+    <a href="table.html">Table</a>
+    <a href="boards.html">Boards</a>
+  </nav>
+</header>
+    <title>Form Page</title>
+    <!-- Linked external CSS -->
+    <link rel="stylesheet" href="strings.css">
+</head>
+<body>
+
+    <!-- This is my form title -->
+    <h1>Gimmie Your Information Pretty Please</h1>
+
+    <!-- The form wraps all input and submit elements -->
+    <form id="infoForm">
+        <input type="text" id="firstName" placeholder="First Name" required><br>
+        <input type="text" id="lastName" placeholder="Last Name" required><br>
+        <input type="text" id="zipCode" placeholder="Zip Code" required><br>
+        <button type="submit">Check Info</button>
+    </form>
+
+    <!-- This is where the message will go -->
+    <div id="message"></div>
+
+    <!-- Fun image for the secret message -->
+    <img id="secretImage" src="cat.jpeg" width="900px" height="600px">
+
+    <!-- Linked external JS -->
+    <script src="strings.js"></script>
+</body>
+</html>

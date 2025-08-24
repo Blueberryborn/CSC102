@@ -1,20 +1,51 @@
-<!-- anthony plass, 7/10/2025  -->
-<!-- DOCTYPE tells browser that this is a HTML5 page -->
+<!-- Anthony Plass, 8/1/2025 -->
+<!-- DOCTYPE tells browser this is an HTML page -->
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>CSC102 Home Page</title>
+<html lang="en">
+<head>
+    <header class="site-header">
+  <nav class="main-nav">
+    <a href="INDEX.html"aria-current="page">Home</a>
+    <a href="strings.html">Strings</a>
+    <a href="Palindrome.html">Palindrome</a>
+    <a href="game.html">Game</a>
+    <a href="table.html">Table</a>
+    <a href="boards.html">Boards</a>
+  </nav>
+</header>
+    <meta charset="UTF-8">
+    <title>CSC102 Home Page</title>
+
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="INDEX.CSS">
+
+    <!-- Link to external JavaScript file -->
+    <script src="INDEX.JS"></script>
 </head>
-
 <body>
-        <h1> Welcome to my CSC102 Home Page</h1>
+    <!-- Page Header with title -->
+    <header>
+        <h1>Welcome to my CSC102 Home Page</h1>
 
-        <p>
-            <img id="MemeImage" src="MEME.png">
-        </p>
-            
-    </body>
+    <!-- Displays meme -->
+    <p>
+        <img id="MEME" src="SHOCKED.gif"
+    </p>
+    
 
+    <!-- Control buttons -->
+    <div class="button-container">
+        <!-- Start Button -->
+        <button id="startBtn">Start</button>
+
+        <!-- Stop Button -->
+        <button id="stopBtn" disabled>Stop</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by Anthony Plass</p>
+    </footer>
+</body>
 </html>
-
 
