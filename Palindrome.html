@@ -1,0 +1,158 @@
+<!-- 
+Name: Anthony Plass
+Date: 08/16/2025
+Assignment: Palindrome Checker
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <header class="site-header">
+  <nav class="main-nav">
+    <a href="INDEX.html">Home</a>
+    <a href="strings.html">Strings</a>
+    <a href="Palindrome.html" aria-current="page">Palindrome</a>    
+    <a href="game.html">Game</a>
+    <a href="table.html">Table</a>
+    <a href="boards.html">Boards</a>
+  </nav>
+</header>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+    <!-- Page title in browser tab -->
+    <title>Palindrome Checker</title>
+
+    <!-- Import Google Font for style -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Gradient background */
+        body {
+            background: linear-gradient(135deg, #4287ee 0%, #e4f1ff 100%);
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: top;
+            justify-content: center;
+        }
+/* Navigation */
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+        /* Title style */
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #5c2a9d;
+            margin-bottom: 10px;
+        }
+
+        /* Container card */
+        .container {
+            background-color: #fff;
+            border-radius: 16px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+            padding: 28px;
+            max-width: 480px;
+            width: calc(100% - 32px);
+        }
+
+        /* Input box */
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        /* Submit button */
+        input[type="submit"] {
+            background-color: #5c2a9d;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #7b42c1;
+        }
+
+        /* Result text */
+        #result {
+            margin-top: 14px;
+            font-size: 18px;
+            font-weight: 700;
+            min-height: 28px;
+        }
+
+        /* Glow animation for success */
+        .glow {
+            animation: pulseGlow 900ms ease-out;
+        }
+        /* Background and general layout */
+body {
+    background-color: #0dafb4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+/* Header styles */
+header {
+    background-color: #004477;
+    color: white;
+    padding: 20px;
+}
+
+        @keyframes pulseGlow {
+            0% { text-shadow: 0 0 0 rgba(92,42,157,0); }
+            50% { text-shadow: 0 0 24px rgba(92,42,157,0.45); }
+            100% { text-shadow: 0 0 0 rgba(92,42,157,0); }
+        }
+
+        /*  image */
+        img {
+            width: 110px;
+            margin-top: 18px;
+            border-radius: 12px;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+    <!-- Main app card -->
+    <div class="container">
+        <!-- Page title -->
+        <h1>Palindrome Checker</h1>
+
+        <!-- Form: input + button -->
+        <form id="palindromeForm">
+            <input type="text" id="userString" placeholder="Enter a word or phrase" required>
+            <input type="submit" value="Check">
+        </form>
+
+        <!-- Display result -->
+        <div id="result"></div>
+
+        <!-- image -->
+        <img src="pal_photo.avif" alt="Palindrome Image">
+    </div>
+
+    <!-- Link to external JS file -->
+    <script src="Palindrome.js"></script>
+</body>
+</html>

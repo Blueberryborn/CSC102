@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <header class="site-header">
+  <nav class="main-nav">
+    <a href="INDEX.html">Home</a>
+    <a href="strings.html">Strings</a>
+    <a href="Palindrome.html">Palindrome</a>
+    <a href="game.html">Game</a>
+    <a href="table.html"> Table</a>
+    <a href="boards.html">Boards</a>
+  </nav>
+</header>
+  <!-- Metadata -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grocery Staples Price Tracker</title>
+
+  <!-- External CSS file link -->
+  <link rel="stylesheet" href="table.css">
+</head>
+<body>
+  <main class="wrap">
+    <!-- Table project created by student -->
+    <section>
+      <h1>Grocery Staples — Price Tracker</h1>
+      <p>This table helps track common grocery items and their prices across different stores</p>
+
+      <!-- Button to trigger JavaScript sorting -->
+      <button onclick="sortTable()">Sort by Best Price</button>
+      <button onclick="highlightCheapest()">Highlight Cheapest Items</button>
+
+      <div class="table-scroll">
+        <table id="priceTable">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Unit Size</th>
+              <th>Best Price</th>
+              <th>Store</th>
+              <th>Competitor A</th>
+              <th>Competitor B</th>
+              <th>Last Checked</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Item">Whole Milk</td>
+              <td data-label="Unit Size">1 gallon</td>
+              <td data-label="Best Price">$3.49</td>
+              <td data-label="Store">Aldi</td>
+              <td data-label="Competitor A">$3.79</td>
+              <td data-label="Competitor B">$3.99</td>
+              <td data-label="Last Checked">2025-08-23</td>
+            </tr>
+            <tr>
+              <td data-label="Item">Eggs (Large)</td>
+              <td data-label="Unit Size">12 ct</td>
+              <td data-label="Best Price">$1.99</td>
+              <td data-label="Store">Walmart</td>
+              <td data-label="Competitor A">$2.29</td>
+              <td data-label="Competitor B">$2.19</td>
+              <td data-label="Last Checked">2025-08-21</td>
+            </tr>
+            <tr>
+              <td data-label="Item">Boneless Chicken Breast</td>
+              <td data-label="Unit Size">per lb</td>
+              <td data-label="Best Price">$2.29</td>
+              <td data-label="Store">Food Lion</td>
+              <td data-label="Competitor A">$2.49</td>
+              <td data-label="Competitor B">$2.59</td>
+              <td data-label="Last Checked">2025-08-20</td>
+            </tr>
+            <tr>
+              <td data-label="Item">Rice (Long Grain)</td>
+              <td data-label="Unit Size">10 lb bag</td>
+              <td data-label="Best Price">$6.98</td>
+              <td data-label="Store">Sam's Club</td>
+              <td data-label="Competitor A">$7.29</td>
+              <td data-label="Competitor B">$7.59</td>
+              <td data-label="Last Checked">2025-08-18</td>
+            </tr>
+            <tr>
+              <td data-label="Item">Peanut Butter</td>
+              <td data-label="Unit Size">40 oz</td>
+              <td data-label="Best Price">$4.79</td>
+              <td data-label="Store">Target</td>
+              <td data-label="Competitor A">$4.99</td>
+              <td data-label="Competitor B">$5.19</td>
+              <td data-label="Last Checked">2025-08-18</td>
+            </tr>
+            <tr>
+              <td data-label="Item">Frozen Chicken Nuggets</td>
+              <td data-label="Unit Size">3 lb bag</td>
+              <td data-label="Best Price">$8.49</td>
+              <td data-label="Store">Costco</td>
+              <td data-label="Competitor A">$8.99</td>
+              <td data-label="Competitor B">$9.29</td>
+              <td data-label="Last Checked">2025-08-17</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="7">Tip: Check these prices every 2 weeks to stay updated.</td>
+            </tr>
+          </tfoot>
+          <caption>Table contains grocery item names, sizes, best and competitor prices, and where they were last found cheapest.</caption>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- External JS file link -->
+  <script src="table.js"></script>
+</body>
+</html>
+

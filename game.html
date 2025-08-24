@@ -1,0 +1,67 @@
+<!-- 
+Name: Anthony Plass
+JavaScript Concepts Demo
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<header class="site-header">
+  <nav class="main-nav">
+    <a href="INDEX.html">Home</a>
+    <a href="strings.html">Strings</a>
+    <a href="Palindrome.html">Palindrome</a>
+    <a href="game.html" aria-current="page">Game</a>
+    <a href="table.html">Table</a>
+    <a href="boards.html">Boards</a>
+  </nav>
+  
+</header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Concepts Demo</title>
+
+  <link href="Main.css" rel="stylesheet">
+  <script src="code.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1 id="heading"> Welcome to My JavaScript Demo Page!</h1>
+    <p>Click the button to gain XP, manipulate strings, or generate random quotes!</p>
+  </header>
+
+  <main>
+    <!-- GAME -->
+    <section class="card">
+      <h2>🎮 XP Clicker Game</h2>
+      <p>Each click gives you XP, Reach new milestones to unlock messages</p>
+      <div id="score">XP: 0</div>
+      <button id="scoreBtn">Gain XP</button>
+      <div id="message"></div>
+    </section>
+
+    <!-- STRING -->
+    <section class="card">
+      <h2>🔤 String Magic</h2>
+      <form id="stringForm">
+        <label for="userInput">Enter a word or phrase:</label><br>
+        <input type="text" id="userInput" name="userInput" placeholder="Type something cool...">
+        <input type="submit" value="Process">
+      </form>
+      <div id="stringOutput"></div>
+    </section>
+
+    <!-- QUOTE GENERATOR -->
+    <section class="card">
+      <h2>💬 Random Quote Generator</h2>
+      <p>Get inspired with a random motivational quote!</p>
+      <button id="quoteBtn">Generate Quote</button>
+      <div id="quoteOutput"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built by Anthony Plass | JavaScript Demo Project</p>
+  </footer>
+</body>
+</html>
